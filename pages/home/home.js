@@ -1,26 +1,42 @@
+
+const app = getApp()
+console.log(app.data.age)
+
 Page({
   data:{
-    name:'xxGw',
-    age:18,
-    hobbys:[
-      { id: 1, name: 'games' },
-      { id: 2, name: 'girls' },
-      { id: 3, name: 'sleep' }
-    ],
-    counter:0
   },
-  handleBtnClick(){
-    //错误做法
-    // this.data.counter += 1
-
-    //2.this.setData()
-    this.setData({
-      counter:this.data.counter + 1
+  handleGetUserInfo(event){
+    console.log(event)
+  },
+  onLoad(){
+    console.log('onLoad')
+    wx.request({
+      url: 'https://www.baidu.com',
+      success:(res)=>{
+        console.log(res)
+      }
     })
   },
-  handleSubClick(){
-    this.setData({
-      counter:this.data.counter - 1
-    })
+  onShow() {
+    console.log('onShow')
+  },
+  onReady() {
+    console.log('onReady')
+  },
+  onHide() {
+    console.log('onHide')
+  },
+  onUnload() {
+    console.log('onUnload')
+  },
+  onPageScroll(obj){
+    console.log(obj)
+  },
+  onPullDownRefresh(){
+    //下拉刷新
+    console.log('下拉刷新')
+  },
+  onReachBottom(){
+    //滑倒底部
   }
 })
