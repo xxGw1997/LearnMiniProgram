@@ -1,0 +1,31 @@
+<!--pages/button/button.wxml-->
+<!-- 1.button的基本使用 -->
+<!-- 默认独占一行 -->
+<button>按钮</button>
+
+<!-- 2.size属性:mini -->
+<button size="mini">按钮</button>
+<button size="mini">按钮</button>
+<text>\n</text>
+
+<!-- 3.type属性: -->
+<button type="primary" size="mini">主要按钮</button>
+<button type="default" size="mini">默认按钮</button>
+<button type="warn" size="mini">警告按钮</button>
+<text>\n</text>
+
+<!-- 4.plain:镂空效果 -->
+<button plain size="mini">镂空按钮</button>
+<text>\n</text>
+
+<!-- 5.disable:不可用 -->
+<button size="mini" disabled>不可点击</button>
+<text>\n</text>
+
+<!-- 6.loading:加载中/等待 -->
+<button size="mini" loading></button>
+<button size="mini" loading='{{isLoading}}'>加载中</button>
+<text>\n</text>
+
+<!-- 7.hover-class:修改css样式,在wxss文件中设置 -->
+<button hover-class="pressed">按钮</button>
