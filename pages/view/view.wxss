@@ -1,0 +1,36 @@
+/* pages/view/view.wxss */
+.box{
+  background: red;
+}
+
+.box1{
+  width: 100px;
+  height: 100px;
+  background: purple;
+}
+
+.hover-view{
+  background: orange;
+  font-size: 30px;
+}
+
+.foo{
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  background: orchid;
+}
+
+.son{
+  width:100px;
+  height: 100px;
+  background: gold;
+}
+
+.foo-h{
+  background: black;
+}
+
+.son-h{
+  background: green;
+}
