@@ -1,0 +1,25 @@
+<!-- image基本使用
+  可以写成单标签，
+  默认大小：320x240，
+  行内块级元素
+ -->
+<image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1581681030660&di=2389c132b2f968d15ce29f13aeef2ec3&imgtype=0&src=http%3A%2F%2Fyouimg1.c-ctrip.com%2Ftarget%2Ftg%2F544%2F201%2F847%2F99f5817905de4cf3bf424ed2276e882a.jpg'></image>
+
+<!-- 2.src:本地地址/远程地址 -->
+<image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1581681030661&di=4e538e108b35672df98d59540daed3e0&imgtype=0&src=http%3A%2F%2Fdik.img.kttpdq.com%2Fpic%2F101%2F70310%2F3dd94d667cef39c9_2560x1440.jpg'></image>
+
+<image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1284651229,4011062394&fm=26&gp=0.jpg'></image>
+
+<button bindtap="handleChooseAlbum">选中图片</button>
+
+<image src="{{imagePath}}"></image>
+
+<!-- 3.bindload:监听图片加载完成 -->
+<image src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1284651229,4011062394&fm=26&gp=0.jpg"
+      bindload="handleImageLoad" wx:for="{{10}}" lazy-load
+></image>
+
+<!-- 4.show-menu-by-longpress:长按图片识别小程序码 -->
+<image show-menu-by-longpress="true" src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1284651229,4011062394&fm=26&gp=0.jpg" 
+></image>
+
